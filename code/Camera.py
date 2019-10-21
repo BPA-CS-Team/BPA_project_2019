@@ -1,7 +1,6 @@
 import pygame
 
-
-class Camera:
+class Camera():
 
     def __init__(self, surface):
         self.surface = surface
@@ -24,3 +23,6 @@ class Camera:
     def set_pos(self, x, y):
         self.x = x - self.surface.get_width() / 2
         self.y = y - self.surface.get_height() / 2
+
+    def get_pos(self):
+        return self.x, self.y

@@ -23,3 +23,5 @@ class Block(GameObject.GameObject):
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
+        self.physics = True
+        self.dynamic = False
