@@ -1,4 +1,4 @@
-import pygame, Box2D
+import pygame, Box2D, ContactHandler
 
 
 class GameObjectHandler:
@@ -7,10 +7,12 @@ class GameObjectHandler:
         self.world = Box2D.b2World() #create instance of box 2d world
         self.b2_scale = b2_scale # scaling reference. is equal to pixels to meter
         self.gameobjects = [] #game objects list
+        self.contactHandler = ContactHandler.ContactHandler()
+        self.world.contactListener = self.contactHandler
 
         if gameobjects: #checks to see if there are objects in list
-            for gameobject in gameobjects:
-                self.add(gameobject)
+            for gameobject in gameobjects: #iterates through list
+                self.add(gameobject) #if so calls add function      
 
     def set_b2_scale(self, scale):
         self.b2_scale = scale

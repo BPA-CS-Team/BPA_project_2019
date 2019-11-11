@@ -10,3 +10,9 @@ class GameObject:
 
     def update(self):
         pass
+
+    def collisionBegin(self, gameObject):
+        pass
+
+    def collisionEnd(self, gameObject):
+        pass
