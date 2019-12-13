@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" infinite="0" backgroundcolor="#00ffff" nextlayerid="6" nextobjectid="18">
- <tileset firstgid="1" source="main_set.tsx"/>
- <layer id="4" name="Block" width="100" height="100">
-  <data encoding="base64" compression="zlib">
-   eJzt0zkKACAMBED1/48W2zQeEEWYgZBmqw0phV/UMCt5csy61f09u78Q8251bnTXkjYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADASx0X5QAu
-  </data>
- </layer>
-</map>

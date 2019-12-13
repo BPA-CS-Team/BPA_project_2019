@@ -19,4 +19,7 @@ class Objective:
    result (varies based on objectives): The result of the said action
   Return value:
    True if the action and result match the finishing_conditions, False otherwise"""
-  return action in self.finishing_conditions and result == self.finishing_conditions[action]
+  if action in self.finishing_conditions and result == self.finishing_conditions[action]:
+   del self.finishing_conditions[action]
+   return True
+  return False

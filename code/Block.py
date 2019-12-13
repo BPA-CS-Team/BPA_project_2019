@@ -1,6 +1,8 @@
-import pygame, GameObject
+import pygame
+from GameEngine import GameObject
 
-class Block(GameObject.GameObject):
+
+class Block(GameObject):
     """The player class that is going to be used inside the game"""
 
     def __init__(self, x, y, image):
@@ -8,11 +10,11 @@ class Block(GameObject.GameObject):
         Parameters:
             x (int): The starting x of the player
             y (int): The starting y of the player
-            image_path (string): Player image path
+            image (string): Player image path
         Return Value:
             None"""
         # Call the parent class (Sprite) constructor
-        GameObject.GameObject.__init__(self)
+        GameObject.__init__(self)
 
         # Create an image of the block, and fill it with a color.
         # This could also be an image loaded from the disk.
